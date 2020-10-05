@@ -18,7 +18,7 @@ $btnSearch.addEventListener('click', () => {
 async function consultar(query) {
     try {
 
-            const api = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=${APIKEY}`)
+            const api = await fetch(`https://www.omdbapi.com/?s=${query}&apikey=${APIKEY}`)
             const result = await api.json()
 
             draw(result.Search)
